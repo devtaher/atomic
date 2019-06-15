@@ -1,9 +1,8 @@
 <div class="container">
-{% include '@atomic/components/organisms/articles/articles.twig' 
-  with {
-    article__title: content.title|raw,
-    article__text: content.body|field_value|raw,
-    article__image_url: file_url(node.field_image['#items'].entity.uri.value)
-  }
-%}
+  {% include '@atomic/components/organisms/articles/articles.twig' 
+    with {
+      article__title: label,
+      article__text: content.body|field_value
+    }
+  %}
 </div>
