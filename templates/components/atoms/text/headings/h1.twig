@@ -1,0 +1,14 @@
+{#
+/**
+ * @file
+ * Atom - Headings - H1.
+ *
+ * Available variables:
+ * 
+ * heading_text: Heading text
+ * class - atom classes.
+ */
+#}
+<h1 class="{{ class }} {% if color %}{% include '@atomic/components/utilities/_color_selector.twig' %}{% endif %}">
+    {{ heading_text }}
+</h1>

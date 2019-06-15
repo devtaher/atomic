@@ -1,0 +1,6 @@
+name: Atomic
+type: theme
+description: 'Atomic theme'
+core: 8.x
+libraries:
+  - atomic/bootstrap

@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Utility template - Color class selector
+ *
+ * Available variables:
+ *
+ * color -  Color name.
+ *
+ */
+#}
+{%if color == 'black' or color == 'white' %}
+    textcolor-{{ color }}-core
+{% elseif color == 'blue' %}
+    extcolor-systems-blue-5
+{% endif %}

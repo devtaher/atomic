@@ -1,0 +1,6 @@
+bootstrap:
+  version: VERSION
+  header: true
+  css:
+    theme:
+      https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css: { type: external }

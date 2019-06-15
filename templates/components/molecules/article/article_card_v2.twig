@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Molecule - Article V2
+ * This version displays Article title and article image.
+ *
+ * Available variables:
+ * 
+ * article__title: Article Title
+ * article__text: Article Text
+ */
+#}
+<div class="card v2">
+  {% include '@atomic/components/atoms/text/headings/h2.twig'
+    with {
+      class: 'card-title c-purple',
+      heading_text : article__title
+    }
+  %}
+
+  {% include '@atomic/components/atoms/media/img.twig' 
+    with {
+      class: 'url c-brown',
+      img_url : article__img_url
+    }
+  %}
+</div>

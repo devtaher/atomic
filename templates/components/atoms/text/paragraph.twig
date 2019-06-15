@@ -1,0 +1,14 @@
+{#
+/**
+ * @file
+ * Atom - Paragraph.
+ *
+ * Available variables:
+ *
+ * paragraph_text: Paragraph text
+ * class - atom classes.
+ */
+#}
+<p class="{{ class }} {% if color %} {% include '@atomic/components/utilities/_color_selector.twig' %} {% endif %}">
+  {{ paragraph_text }}
+</p>
